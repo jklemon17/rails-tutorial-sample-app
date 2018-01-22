@@ -3,8 +3,11 @@ source 'https://rubygems.org'
 gem 'rails',                   '5.1.2'
 gem 'bcrypt',                  '3.1.11'
 gem 'faker',                   '1.7.3'
+# CarrierWave for image upload
 gem 'carrierwave',             '1.1.0'
+# Mini-magick for image manipulation
 gem 'mini_magick',             '4.7.0'
+# FOG for production image upload
 gem 'fog-aws',                 '2.0.0'
 gem 'will_paginate',           '3.1.6'
 gem 'bootstrap-will_paginate', '1.0.0'
@@ -37,7 +40,10 @@ group :test do
 end
 
 group :production do
-  gem 'pg', '0.20.0'
+  # Production DB
+  gem 'pg',   '0.20.0'
+  # Production image upload
+  gem 'fog', '1.42'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
