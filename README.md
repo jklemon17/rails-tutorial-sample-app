@@ -1,4 +1,5 @@
 View this application in production at: https://floating-earth-90423.herokuapp.com/
+
 To see all features, log in as: example@railstutorial.org, password: foobar
 
 # Ruby on Rails Tutorial sample application
